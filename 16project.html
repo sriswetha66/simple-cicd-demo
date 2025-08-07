@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background:url('im.jpeg') no-repeat center/cover; 
+        }
+        h1 {
+            text-align: center;
+            color: #182364;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .container{
+            background-color: whitesmoke;
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .checkbox {
+            margin-top: 15px;
+        }
+        input[type=text], input[type=number],select, textarea {
+            width:100%;
+            padding:8px;
+            margin-top: 5px;
+            border: 2px solid #a8e9ee;
+            border-radius: 4px;
+        }
+    </style>
+    <title>task 16</title>
+</head>
+<body>
+
+    <h1> Code.Net Online Course Enrollment</h1>
+
+    <div class="container">
+        <p>Welcome to our online learning platform! We're excited to help you grow your skills and achieve your educational goals. Please fill out the form below to enroll in one of our expert-led courses.</p>
+        
+        <img src="codenet.png" alt="Online Learning Image">
+
+        <form>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="10">
+
+            <label for="course">Select Your Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="web-development">Full Stack Web Development</option>
+                <option value="data-science">Python Programming</option>
+                <option value="graphic-design">Artificial Intelligence </option>
+                <option value="digital-marketing">Ms Office</option>
+            </select>
+
+            <label for="mode">Choose Your Learning Mode:</label>
+            <select id="mode" name="mode" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+
+            <label>
+                <h4 id="checkbox"><input type="checkbox" >I agree to the Terms And Conditions</h4>
+            </label>
+
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any specific needs or requests..."></textarea>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
